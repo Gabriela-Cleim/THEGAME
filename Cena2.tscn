@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Objects/continua1.png" type="Texture" id=1]
+
+[node name="Cena2" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 506.8, 294.287 )
+scale = Vector2( 1.9695, 1.46049 )
+texture = ExtResource( 1 )

@@ -1,0 +1,2042 @@
+[gd_scene load_steps=144 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://png/female/Idle (1).png" type="Texture" id=2]
+[ext_resource path="res://Objects/corredor.jpg" type="Texture" id=3]
+[ext_resource path="res://Tile Chão.tres" type="TileSet" id=4]
+[ext_resource path="res://png/female/Walk (1).png" type="Texture" id=5]
+[ext_resource path="res://png/female/Dead (5).png" type="Texture" id=6]
+[ext_resource path="res://png/female/Dead (9).png" type="Texture" id=7]
+[ext_resource path="res://png/female/Idle (10).png" type="Texture" id=8]
+[ext_resource path="res://png/female/Dead (6).png" type="Texture" id=9]
+[ext_resource path="res://png/female/Walk (8).png" type="Texture" id=10]
+[ext_resource path="res://png/female/Idle (14).png" type="Texture" id=11]
+[ext_resource path="res://png/female/Idle (7).png" type="Texture" id=12]
+[ext_resource path="res://png/female/Dead (4).png" type="Texture" id=13]
+[ext_resource path="res://png/female/Dead (1).png" type="Texture" id=14]
+[ext_resource path="res://png/female/Dead (12).png" type="Texture" id=15]
+[ext_resource path="res://png/female/Idle (11).png" type="Texture" id=16]
+[ext_resource path="res://png/female/Dead (7).png" type="Texture" id=17]
+[ext_resource path="res://png/female/Attack (3).png" type="Texture" id=18]
+[ext_resource path="res://png/female/Walk (3).png" type="Texture" id=19]
+[ext_resource path="res://png/female/Attack (5).png" type="Texture" id=20]
+[ext_resource path="res://png/female/Idle (13).png" type="Texture" id=21]
+[ext_resource path="res://png/female/Idle (15).png" type="Texture" id=22]
+[ext_resource path="res://png/female/Attack (4).png" type="Texture" id=23]
+[ext_resource path="res://png/female/Attack (8).png" type="Texture" id=24]
+[ext_resource path="res://png/female/Idle (5).png" type="Texture" id=25]
+[ext_resource path="res://png/female/Idle (12).png" type="Texture" id=26]
+[ext_resource path="res://png/female/Walk (5).png" type="Texture" id=27]
+[ext_resource path="res://png/female/Walk (2).png" type="Texture" id=28]
+[ext_resource path="res://png/female/Dead (2).png" type="Texture" id=29]
+[ext_resource path="res://png/female/Attack (6).png" type="Texture" id=30]
+[ext_resource path="res://png/female/Idle (3).png" type="Texture" id=31]
+[ext_resource path="res://png/female/Walk (7).png" type="Texture" id=32]
+[ext_resource path="res://png/female/Walk (6).png" type="Texture" id=33]
+[ext_resource path="res://png/female/Idle (4).png" type="Texture" id=34]
+[ext_resource path="res://png/female/Dead (10).png" type="Texture" id=35]
+[ext_resource path="res://png/female/Walk (4).png" type="Texture" id=36]
+[ext_resource path="res://png/female/Dead (8).png" type="Texture" id=37]
+[ext_resource path="res://png/female/Idle (8).png" type="Texture" id=38]
+[ext_resource path="res://png/female/Idle (6).png" type="Texture" id=39]
+[ext_resource path="res://png/female/Attack (1).png" type="Texture" id=40]
+[ext_resource path="res://png/female/Attack (7).png" type="Texture" id=41]
+[ext_resource path="res://png/female/Attack (2).png" type="Texture" id=42]
+[ext_resource path="res://png/female/Idle (2).png" type="Texture" id=43]
+[ext_resource path="res://png/female/Walk (10).png" type="Texture" id=44]
+[ext_resource path="res://png/female/Dead (11).png" type="Texture" id=45]
+[ext_resource path="res://png/female/Walk (9).png" type="Texture" id=46]
+[ext_resource path="res://png/female/Idle (9).png" type="Texture" id=47]
+[ext_resource path="res://png/female/Dead (3).png" type="Texture" id=48]
+[ext_resource path="res://Objects/TombStone (2).png" type="Texture" id=49]
+[ext_resource path="res://Objects/TombStone (1).png" type="Texture" id=50]
+[ext_resource path="res://Objects/Barrel (2).png" type="Texture" id=51]
+[ext_resource path="res://Tiles/Spike.png" type="Texture" id=52]
+[ext_resource path="res://Tiles/Acid (1).png" type="Texture" id=53]
+[ext_resource path="res://Objects/head4.png" type="Texture" id=54]
+[ext_resource path="res://Objects/sorvete cerebro.png" type="Texture" id=55]
+[ext_resource path="res://Objects/DoorLocked.png" type="Texture" id=56]
+[ext_resource path="res://png/boss/Walk3.png" type="Texture" id=57]
+[ext_resource path="res://png/boss/Dead7.png" type="Texture" id=58]
+[ext_resource path="res://Passagem.gd" type="Script" id=59]
+[ext_resource path="res://png/boss/Walk4.png" type="Texture" id=60]
+[ext_resource path="res://png/boss/Walk5.png" type="Texture" id=61]
+[ext_resource path="res://png/boss/Dead5.png" type="Texture" id=62]
+[ext_resource path="res://png/boss/Dead4.png" type="Texture" id=63]
+[ext_resource path="res://png/boss/Dead8.png" type="Texture" id=66]
+[ext_resource path="res://png/boss/Dead3.png" type="Texture" id=67]
+[ext_resource path="res://png/boss/Walk6.png" type="Texture" id=68]
+[ext_resource path="res://png/boss/Dead2.png" type="Texture" id=71]
+[ext_resource path="res://png/boss/Walk2.png" type="Texture" id=73]
+[ext_resource path="res://png/boss/Dead1.png" type="Texture" id=77]
+[ext_resource path="res://png/boss/Dead6.png" type="Texture" id=79]
+[ext_resource path="res://png/boss/Walk1.png" type="Texture" id=80]
+[ext_resource path="res://png/male/Walk (2).png" type="Texture" id=82]
+[ext_resource path="res://Tiles/Bone (4).png" type="Texture" id=84]
+[ext_resource path="res://Tiles/Bone (2).png" type="Texture" id=85]
+[ext_resource path="res://Tiles/Bone (3).png" type="Texture" id=86]
+[ext_resource path="res://Tiles/Bone (1).png" type="Texture" id=87]
+[ext_resource path="res://png/male/Walk (3).png" type="Texture" id=88]
+[ext_resource path="res://png/male/Walk (4).png" type="Texture" id=89]
+[ext_resource path="res://png/male/Dead (9).png" type="Texture" id=90]
+[ext_resource path="res://png/male/Attack (7).png" type="Texture" id=91]
+[ext_resource path="res://png/male/Attack (5).png" type="Texture" id=92]
+[ext_resource path="res://png/male/Idle (1).png" type="Texture" id=93]
+[ext_resource path="res://png/male/Dead (12).png" type="Texture" id=94]
+[ext_resource path="res://png/male/Idle (7).png" type="Texture" id=95]
+[ext_resource path="res://png/male/Idle (14).png" type="Texture" id=96]
+[ext_resource path="res://png/male/Walk (5).png" type="Texture" id=97]
+[ext_resource path="res://png/male/Idle (12).png" type="Texture" id=98]
+[ext_resource path="res://png/male/Dead (11).png" type="Texture" id=99]
+[ext_resource path="res://png/male/Idle (9).png" type="Texture" id=100]
+[ext_resource path="res://png/male/Dead (1).png" type="Texture" id=101]
+[ext_resource path="res://png/male/Idle (4).png" type="Texture" id=102]
+[ext_resource path="res://png/male/Walk (6).png" type="Texture" id=103]
+[ext_resource path="res://png/male/Walk (1).png" type="Texture" id=104]
+[ext_resource path="res://png/male/Dead (7).png" type="Texture" id=105]
+[ext_resource path="res://png/male/Dead (3).png" type="Texture" id=106]
+[ext_resource path="res://png/male/Dead (4).png" type="Texture" id=107]
+[ext_resource path="res://png/male/Attack (3).png" type="Texture" id=108]
+[ext_resource path="res://png/male/Idle (8).png" type="Texture" id=109]
+[ext_resource path="res://png/male/Attack (1).png" type="Texture" id=110]
+[ext_resource path="res://png/male/Idle (13).png" type="Texture" id=111]
+[ext_resource path="res://png/male/Dead (8).png" type="Texture" id=112]
+[ext_resource path="res://png/male/Attack (4).png" type="Texture" id=113]
+[ext_resource path="res://png/male/Attack (8).png" type="Texture" id=114]
+[ext_resource path="res://png/male/Walk (9).png" type="Texture" id=115]
+[ext_resource path="res://png/male/Dead (6).png" type="Texture" id=116]
+[ext_resource path="res://png/male/Attack (6).png" type="Texture" id=117]
+[ext_resource path="res://png/male/Dead (5).png" type="Texture" id=118]
+[ext_resource path="res://png/male/Walk (10).png" type="Texture" id=119]
+[ext_resource path="res://png/male/Idle (5).png" type="Texture" id=120]
+[ext_resource path="res://png/male/Idle (10).png" type="Texture" id=121]
+[ext_resource path="res://png/male/Idle (2).png" type="Texture" id=122]
+[ext_resource path="res://png/male/Dead (2).png" type="Texture" id=123]
+[ext_resource path="res://png/male/Dead (10).png" type="Texture" id=124]
+[ext_resource path="res://png/male/Idle (11).png" type="Texture" id=125]
+[ext_resource path="res://png/male/Idle (15).png" type="Texture" id=126]
+[ext_resource path="res://png/male/Idle (3).png" type="Texture" id=127]
+[ext_resource path="res://png/male/Attack (2).png" type="Texture" id=128]
+[ext_resource path="res://png/male/Idle (6).png" type="Texture" id=129]
+[ext_resource path="res://png/male/Walk (8).png" type="Texture" id=130]
+[ext_resource path="res://png/male/Walk (7).png" type="Texture" id=131]
+[ext_resource path="res://Jogo.gd" type="Script" id=133]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 40 ), ExtResource( 42 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 20 ), ExtResource( 30 ), ExtResource( 41 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "Atacando",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 29 ), ExtResource( 48 ), ExtResource( 13 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 17 ), ExtResource( 37 ), ExtResource( 7 ), ExtResource( 35 ), ExtResource( 45 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "Morrendo",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 43 ), ExtResource( 31 ), ExtResource( 34 ), ExtResource( 25 ), ExtResource( 39 ), ExtResource( 12 ), ExtResource( 38 ), ExtResource( 47 ), ExtResource( 8 ), ExtResource( 16 ), ExtResource( 26 ), ExtResource( 21 ), ExtResource( 11 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "Parado",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 28 ), ExtResource( 19 ), ExtResource( 36 ), ExtResource( 27 ), ExtResource( 33 ), ExtResource( 32 ), ExtResource( 10 ), ExtResource( 46 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "Correndo",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 110 ), ExtResource( 128 ), ExtResource( 108 ), ExtResource( 113 ), ExtResource( 92 ), ExtResource( 117 ), ExtResource( 91 ), ExtResource( 114 ) ],
+"loop": true,
+"name": "Atacando",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 101 ), ExtResource( 123 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 118 ), ExtResource( 116 ), ExtResource( 105 ), ExtResource( 112 ), ExtResource( 90 ), ExtResource( 124 ), ExtResource( 99 ), ExtResource( 94 ) ],
+"loop": true,
+"name": "Morrendo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 93 ), ExtResource( 122 ), ExtResource( 127 ), ExtResource( 102 ), ExtResource( 120 ), ExtResource( 129 ), ExtResource( 95 ), ExtResource( 109 ), ExtResource( 100 ), ExtResource( 121 ), ExtResource( 125 ), ExtResource( 98 ), ExtResource( 111 ), ExtResource( 96 ), ExtResource( 126 ) ],
+"loop": true,
+"name": "Parado",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 104 ), ExtResource( 82 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 97 ), ExtResource( 103 ), ExtResource( 131 ), ExtResource( 130 ), ExtResource( 115 ), ExtResource( 119 ) ],
+"loop": true,
+"name": "Correndo",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 54.8882, 103.635 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 29.1401, 212.223 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 46.7401, 55.979 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 51.3877, 16.5136 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 80.0039, 55 )
+
+[sub_resource type="StreamTexture" id=8]
+flags = 4
+load_path = "res://.import/Barrel (1).png-46e46e13be4cf440f2ce463e9d106491.stex"
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 88.0469, 116.89 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 40.7947, 30.5751 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 38.7971, 52.0376 )
+
+[sub_resource type="GDScript" id=12]
+script/source = "extends KinematicBody2D
+
+
+func _ready():
+	$AnimatedSprite.play(\"Andando\")
+
+var velocidade = 100
+var mov = Vector2(velocidade,0)
+var direcao = 1
+
+func _process(delta):
+	mov.x = direcao*velocidade
+	if (direcao== 1):
+		$AnimatedSprite.flip_h = false
+	else: 
+		$AnimatedSprite.flip_h = true
+	move_and_slide(mov)
+	
+
+func _on_Area2D_body_entered(body):
+	if ($AnimatedSprite.animation==\"Andando\"):
+		body.impacto()
+		$CollisionShape2D.queue_free()
+		$Area2D.queue_free()
+		$ataque/CollisionShape2D.queue_free()
+	velocidade = 0
+	$AnimatedSprite.play(\"Morrendo\")
+	
+	
+func _on_p_direito_body_exited(body):
+	direcao = -1
+	$AnimatedSprite.flip_h = true
+
+func _on_p_esquerdo_body_exited(body):
+	direcao = 1
+	$AnimatedSprite.flip_h = false
+
+func _on_AnimatedSprite_animation_finished():
+	if($AnimatedSprite.animation==\"Morrendo\"):
+		queue_free()
+#		$CollisionShape2D.queue_free()
+
+func _on_ataque_body_entered(body):
+	if (body.name==\"Female\"):
+		ScriptGlobal.qtd_vidas -= 1
+		direcao = direcao * (-1)
+
+func _on_direito_body_entered(body):
+	if body.is_in_group(\"Corpo\"):
+		direcao = -1
+		$AnimatedSprite.flip_h = true
+
+func _on_esquerdo_body_entered(body):
+	if body.is_in_group(\"Corpo\"):
+		direcao = 1
+		$AnimatedSprite.flip_h = false
+"
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 26.6649, 38.425 )
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ ExtResource( 77 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 63 ), ExtResource( 62 ), ExtResource( 79 ), ExtResource( 58 ), ExtResource( 66 ) ],
+"loop": false,
+"name": "Morrendo",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 80 ), ExtResource( 73 ), ExtResource( 57 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 68 ) ],
+"loop": true,
+"name": "Andando",
+"speed": 4.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 26.4399, 4.87233 )
+
+[sub_resource type="RectangleShape2D" id=16]
+
+[sub_resource type="RectangleShape2D" id=17]
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 6.78125, 9.64722 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 7.28113, 9.9874 )
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 39.3372, 12.3819 )
+
+[sub_resource type="GDScript" id=21]
+script/source = "extends KinematicBody2D
+
+
+func _ready():
+	$AnimatedSprite.play(\"Andando\")
+
+var velocidade = 100
+var mov = Vector2(velocidade,0)
+var direcao = 1
+
+func _process(delta):
+	mov.x = direcao*velocidade
+	if (direcao== 1):
+		$AnimatedSprite.flip_h = false
+	else: 
+		$AnimatedSprite.flip_h = true
+	move_and_slide(mov)
+	
+
+func _on_Area2D_body_entered(body):
+	if ($AnimatedSprite.animation==\"Andando\"):
+#		body.impacto()
+		$CollisionShape2D.queue_free()
+		$CollisionShape2D.queue_free()
+		$CollisionShape2D.queue_free()
+		$CollisionShape2D.queue_free()
+		$CollisionShape2D.queue_free()
+		$CollisionShape2D.queue_free()
+		
+	velocidade = 0
+	$AnimatedSprite.play(\"Morrendo\")
+	
+	
+func _on_p_direito_body_exited(body):
+	direcao = -1
+	$AnimatedSprite.flip_h = true
+
+func _on_p_esquerdo_body_exited(body):
+	direcao = 1
+	$AnimatedSprite.flip_h = false
+
+func _on_AnimatedSprite_animation_finished():
+	if($AnimatedSprite.animation==\"Morrendo\"):
+		queue_free()
+		
+
+
+func _on_ataque_body_entered(body):
+	if (body.name==\"Female\"):
+		ScriptGlobal.qtd_vidas -= 1
+		direcao = direcao * (-1)
+
+func _on_direito_body_entered(body):
+	if body.is_in_group(\"Corpo\"):
+		direcao = -1
+		$AnimatedSprite.flip_h = true
+
+func _on_esquerdo_body_entered(body):
+	if body.is_in_group(\"Corpo\"):
+		direcao = 1
+		$AnimatedSprite.flip_h = false
+"
+
+[sub_resource type="RectangleShape2D" id=22]
+extents = Vector2( 51.3799, 73.573 )
+
+[node name="jogo" type="Node2D"]
+script = ExtResource( 133 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1100, 0 )
+
+[node name="Fundo" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 523.602, 292.652 )
+scale = Vector2( 0.575259, 0.798796 )
+texture = ExtResource( 3 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+layer = 1
+
+[node name="zombir" type="Sprite" parent="ParallaxBackground2"]
+position = Vector2( 92.0133, 86.5169 )
+scale = Vector2( 0.110661, 0.102641 )
+texture = ExtResource( 54 )
+
+[node name="vida1" type="Sprite" parent="ParallaxBackground2"]
+position = Vector2( 151.169, 84.7044 )
+scale = Vector2( 0.13353, 0.124778 )
+texture = ExtResource( 55 )
+
+[node name="vida2" type="Sprite" parent="ParallaxBackground2"]
+position = Vector2( 225.724, 86.0191 )
+scale = Vector2( 0.13353, 0.120063 )
+texture = ExtResource( 55 )
+
+[node name="vida3" type="Sprite" parent="ParallaxBackground2"]
+position = Vector2( 187.813, 85.3469 )
+scale = Vector2( 0.131923, 0.120063 )
+texture = ExtResource( 55 )
+
+[node name="Female" type="KinematicBody2D" parent="."]
+position = Vector2( 284.021, 358.266 )
+scale = Vector2( 0.470847, 0.42773 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Female"]
+position = Vector2( 2.41895, 7.21549 )
+scale = Vector2( 0.463308, 0.444297 )
+frames = SubResource( 1 )
+animation = "Atacando"
+frame = 4
+
+[node name="Sprite2" type="AnimatedSprite" parent="Female"]
+position = Vector2( 38.4101, 28.7627 )
+scale = Vector2( 0.501487, 0.414833 )
+frames = SubResource( 2 )
+animation = "Parado"
+frame = 12
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Female"]
+position = Vector2( 18.6027, 12.909 )
+shape = SubResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="Female"]
+position = Vector2( 0.86853, -1.8493 )
+current = true
+limit_left = 0
+limit_top = -20
+limit_bottom = 580
+
+[node name="TileMap" type="TileMap" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 1, 0 )
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 327894, 3, 0, 327898, 5, 0, 327916, 3, 0, 327920, 5, 0, 458930, 3, 0, 458934, 4, 0, 458938, 4, 0, 458942, 5, 0, 458950, 3, 0, 458954, 4, 0, 458958, 5, 0, 590049, 3, 0, 590053, 5, 0, 590071, 3, 0, 590075, 5, 0, 590084, 3, 0, 590088, 5, 0, 590096, 3, 0, 590100, 5, 0, 590108, 3, 0, 590112, 5, 0, 655482, 3, 0, 655486, 4, 0, 655490, 4, 0, 655494, 4, 0, 655498, 4, 0, 655502, 4, 0, 655506, 4, 0, 655510, 4, 0, 655514, 4, 0, 655518, 4, 0, 655522, 4, 0, 655526, 4, 0, 655527, 4, 0, 655531, 5, 0, 720910, 3, 0, 720914, 4, 0, 720918, 5, 0, 720951, 3, 0, 720955, 4, 0, 720958, 4, 0, 720959, 4, 0, 720962, 5, 0, 851968, 0, 0, 851972, 1, 0, 851976, 2, 0, 851996, 0, 0, 852000, 1, 0, 852001, 1, 0, 852002, 1, 0, 852005, 1, 0, 852009, 1, 0, 852012, 1, 0, 852015, 2, 0, 917574, 3, 0, 917578, 4, 0, 917582, 4, 0, 917585, 4, 0, 917588, 4, 0, 917592, 5, 0, 917601, 0, 0, 917602, 0, 0, 917603, 0, 0, 917607, 1, 0, 917611, 1, 0, 917614, 1, 0, 917615, 1, 0, 917616, 1, 0, 917620, 2, 0, 917802, 0, 0, 917806, 1, 0, 917810, 1, 0, 917811, 1, 0, 917815, 1, 0, 917819, 1, 0, 917823, 1, 0, 917827, 1, 0, 917831, 1, 0, 917835, 1, 0, 917839, 1, 0, 917843, 1, 0, 917847, 1, 0, 917851, 1, 0, 917855, 1, 0, 917859, 1, 0, 917863, 1, 0, 917867, 1, 0, 917871, 1, 0, 917875, 1, 0, 917878, 1, 0, 917882, 1, 0, 917886, 1, 0, 917890, 1, 0, 917891, 1, 0, 917895, 1, 0, 917899, 1, 0, 917903, 1, 0, 917907, 1, 0, 917911, 1, 0, 917915, 1, 0, 917919, 1, 0, 917923, 1, 0, 917927, 2, 0, 917928, 2, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cruz" type="StaticBody2D" parent="."]
+position = Vector2( 492.617, 311.267 )
+
+[node name="Sprite" type="Sprite" parent="Cruz"]
+position = Vector2( -0.745117, -4.84871 )
+scale = Vector2( 1.33962, 1.18421 )
+texture = ExtResource( 49 )
+
+[node name="Sepultura" type="StaticBody2D" parent="."]
+position = Vector2( 122.65, 386.469 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sepultura"]
+position = Vector2( -0.249237, -7.97125 )
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="Sepultura"]
+position = Vector2( 1.0117, -10.7948 )
+scale = Vector2( 1.3984, 1.47077 )
+texture = ExtResource( 50 )
+
+[node name="Sprite2" type="Sprite" parent="Sepultura"]
+position = Vector2( 75.4583, 38.0976 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 87 )
+
+[node name="Sprite3" type="Sprite" parent="Sepultura"]
+position = Vector2( 167.528, 41.2724 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 85 )
+
+[node name="Sprite4" type="Sprite" parent="Sepultura"]
+position = Vector2( -33.4725, 96.2724 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 86 )
+
+[node name="Sprite5" type="Sprite" parent="Sepultura"]
+position = Vector2( 157.528, 118.272 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 84 )
+
+[node name="Sprite6" type="Sprite" parent="Sepultura"]
+position = Vector2( 441.01, 16.2184 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 84 )
+
+[node name="Sprite7" type="Sprite" parent="Sepultura"]
+position = Vector2( 592.201, 13.6985 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 84 )
+
+[node name="Sprite8" type="Sprite" parent="Sepultura"]
+position = Vector2( 880.723, 98.1132 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 84 )
+
+[node name="Sprite9" type="Sprite" parent="Sepultura"]
+position = Vector2( 971.437, 95.5934 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 84 )
+
+[node name="Sprite10" type="Sprite" parent="Sepultura"]
+position = Vector2( 1427.35, 89.7544 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 87 )
+
+[node name="Sprite14" type="Sprite" parent="Sepultura"]
+position = Vector2( 2315.6, 92.2742 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 87 )
+
+[node name="Sprite11" type="Sprite" parent="Sepultura"]
+position = Vector2( 1143.87, 92.2742 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 87 )
+
+[node name="Sprite12" type="Sprite" parent="Sepultura"]
+position = Vector2( 1762.67, 11.1787 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 84 )
+
+[node name="Sprite13" type="Sprite" parent="Sepultura"]
+position = Vector2( 1960.48, 11.1787 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 84 )
+
+[node name="Sprite15" type="Sprite" parent="Sepultura"]
+position = Vector2( 2561.46, 101.893 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 84 )
+
+[node name="Sprite16" type="Sprite" parent="Sepultura"]
+position = Vector2( 2737.85, 93.0735 )
+scale = Vector2( 0.888386, 1 )
+texture = ExtResource( 84 )
+
+[node name="Barriu 1" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 1240.74, 348.115 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 1"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 1"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+
+[node name="Barriu 3" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 4091.71, 256.046 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 3"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 3"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 4" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 4545.71, 257.633 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 4"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 4"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 5" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 4905, 255.541 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 5"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 5"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 6" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 5325.08, 259.473 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 6"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 6"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 7" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 9896.07, 380.425 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 7"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 7"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 8" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 10339.7, 383.851 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 8"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 8"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 9" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 10811.5, 381.756 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 9"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 9"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 10" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 11238.2, 385.182 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 10"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 10"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 11" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 11687.5, 381.474 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 11"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 11"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 12" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 12253.6, 380.284 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 12"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 12"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Barriu 13" type="StaticBody2D" parent="." groups=[
+"Corpo",
+]]
+position = Vector2( 12749.5, 383.852 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriu 13"]
+position = Vector2( -4, 6 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Barriu 13"]
+position = Vector2( -4.95471, 8.67609 )
+scale = Vector2( 0.485002, 0.515489 )
+texture = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Espinhos" type="StaticBody2D" parent="."]
+position = Vector2( 426.412, 411.086 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Espinhos"]
+position = Vector2( 7.50613, 10.3373 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Espinhos"]
+position = Vector2( -0.296692, -14.108 )
+scale = Vector2( 0.359846, 0.245846 )
+texture = ExtResource( 52 )
+
+[node name="Espinhos2" type="StaticBody2D" parent="."]
+position = Vector2( 861.384, 376.134 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Espinhos2"]
+position = Vector2( -3.27631, 34.1716 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Espinhos2"]
+position = Vector2( 5.0531, 8.00305 )
+scale = Vector2( 0.359846, 0.245846 )
+texture = ExtResource( 52 )
+
+[node name="Acid" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Acid"]
+position = Vector2( 1742, 478 )
+shape = SubResource( 7 )
+
+[node name="Sprite" type="Sprite" parent="Acid"]
+position = Vector2( 1719, 451 )
+scale = Vector2( 0.726563, 0.734375 )
+texture = ExtResource( 53 )
+
+[node name="Acid2" type="StaticBody2D" parent="."]
+position = Vector2( 3030.87, 486.576 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Acid2"]
+position = Vector2( -4.1615, 25.4235 )
+shape = SubResource( 7 )
+
+[node name="Sprite" type="Sprite" parent="Acid2"]
+position = Vector2( -4.48718, -1.57632 )
+scale = Vector2( 0.639237, 0.734375 )
+texture = ExtResource( 53 )
+
+[node name="barriu fogo" type="StaticBody2D" parent="."]
+position = Vector2( 1404, 238 )
+scale = Vector2( 0.38983, 0.285714 )
+
+[node name="Sprite" type="Sprite" parent="barriu fogo"]
+texture = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="barriu fogo"]
+shape = SubResource( 9 )
+
+[node name="barriu fogo2" type="StaticBody2D" parent="."]
+position = Vector2( 4309.38, 142.246 )
+scale = Vector2( 0.38983, 0.285714 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="barriu fogo2"]
+texture = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="barriu fogo2"]
+shape = SubResource( 9 )
+
+[node name="barriu fogo3" type="StaticBody2D" parent="."]
+position = Vector2( 5103.13, 144.766 )
+scale = Vector2( 0.38983, 0.285714 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="barriu fogo3"]
+texture = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="barriu fogo3"]
+shape = SubResource( 9 )
+
+[node name="barriu fogo4" type="StaticBody2D" parent="."]
+position = Vector2( 10104.6, 266.001 )
+scale = Vector2( 0.38983, 0.285714 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="barriu fogo4"]
+texture = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="barriu fogo4"]
+shape = SubResource( 9 )
+
+[node name="barriu fogo5" type="StaticBody2D" parent="."]
+position = Vector2( 10571.1, 256.629 )
+scale = Vector2( 0.38983, 0.285714 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="barriu fogo5"]
+texture = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="barriu fogo5"]
+shape = SubResource( 9 )
+
+[node name="barriu fogo6" type="StaticBody2D" parent="."]
+position = Vector2( 11461.2, 251.448 )
+scale = Vector2( 0.38983, 0.285714 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="barriu fogo6"]
+texture = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="barriu fogo6"]
+shape = SubResource( 9 )
+
+[node name="checkpoint1" type="Area2D" parent="."]
+position = Vector2( 574.209, 223.937 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint1"]
+position = Vector2( 1.33496, -1.33484 )
+shape = SubResource( 10 )
+
+[node name="checkpoint2" type="Area2D" parent="."]
+position = Vector2( 5783.16, 175.271 )
+
+[node name="cruz" type="Sprite" parent="checkpoint2"]
+position = Vector2( 1.88818, 2.60176 )
+scale = Vector2( 1.63047, 1.31716 )
+texture = ExtResource( 49 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint2"]
+position = Vector2( 86.3794, -14.2684 )
+shape = SubResource( 11 )
+
+[node name="Inimigo2" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 1391.06, 364.328 )
+script = SubResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo2"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo2"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo2/Area2D"]
+position = Vector2( -3.5, -37.7102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo2/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo2/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo2"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo2/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo2"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo2/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo2/ataque"]
+position = Vector2( -3.74976, 11.3763 )
+shape = SubResource( 20 )
+
+[node name="Inimigo4" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 1976.39, 301.591 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo4"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo4"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo4/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo4/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo4/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo4"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo4/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo4"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo4/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo4/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+
+[node name="Inimigo5" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 3490.76, 393.027 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo5"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo5"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo5/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo5/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo5/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo5"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo5/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo5"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo5/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo5/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+
+[node name="Inimigo10" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 2568.48, 399.377 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo10"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo10"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo10/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo10/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo10/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo10"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo10/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo10"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo10/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo10/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+
+[node name="Inimigo6" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 4315.69, 267.552 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo6"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo6"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo6/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo6/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo6/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo6"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo6/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo6"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo6/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo6/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+
+[node name="Inimigo7" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 4721.48, 268.887 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo7"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo7"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo7/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo7/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo7/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo7"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo7/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo7"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo7/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo7/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+
+[node name="Inimigo8" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 5108.59, 266.217 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo8"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo8"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo8/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo8/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo8/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo8"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo8/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo8"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo8/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo8/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+
+[node name="Inimigo9" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 5477, 263.548 )
+script = SubResource( 21 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo9"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo9"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo9/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo9/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo9/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo9"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo9/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo9"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo9/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo9/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+
+[node name="Inimigo3" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 7337.55, 236.124 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo3"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo3"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo3/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo3/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo3/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo3"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo3/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo3"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo3/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo3/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Inimigo11" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 8040.59, 238.644 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo11"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo11"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo11/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo11/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo11/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo11"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo11/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo11"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo11/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo11/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Inimigo12" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 8831.82, 236.124 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo12"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo12"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo12/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo12/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo12/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo12"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo12/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo12"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo12/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo12/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Inimigo13" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 10110.4, 397.111 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo13"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo13"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo13"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo13/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo13"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo13/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo13"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo13/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo13"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo13/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo13"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo13/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo13"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo13/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Inimigo14" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 10570.1, 395.78 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo14"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo14"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo14/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo14/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo14/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo14"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo14/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo14"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo14/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo14/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Inimigo15" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 11037, 396.969 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo15"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo15"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo15/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo15/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo15/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo15"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo15/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo15"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo15/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo15/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Inimigo16" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 11466, 397.951 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo16"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo16"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo16/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo16/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo16/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo16"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo16/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo16"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo16/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo16/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Inimigo17" type="KinematicBody2D" parent="." groups=[
+"Inimigo",
+]]
+position = Vector2( 11971.4, 395.573 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo17"]
+position = Vector2( -3.18481, 10.6651 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Inimigo17"]
+position = Vector2( -5.43994, 7.92883 )
+scale = Vector2( 0.348647, 0.236613 )
+frames = SubResource( 14 )
+animation = "Andando"
+
+[node name="Area2D" type="Area2D" parent="Inimigo17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo17/Area2D"]
+position = Vector2( -3, -34.2102 )
+shape = SubResource( 15 )
+
+[node name="pé esquerdo" type="Area2D" parent="Inimigo17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo17/pé esquerdo"]
+position = Vector2( -39.0198, 65.4353 )
+shape = SubResource( 16 )
+
+[node name="pé direito" type="Area2D" parent="Inimigo17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo17/pé direito"]
+position = Vector2( 34.9524, 66.6319 )
+shape = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="direito" type="Area2D" parent="Inimigo17"]
+position = Vector2( 30.0343, 40.1339 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo17/direito"]
+position = Vector2( 3.06738, -1.11829 )
+shape = SubResource( 18 )
+
+[node name="esquerdo" type="Area2D" parent="Inimigo17"]
+position = Vector2( -36.6087, 41.8239 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo17/esquerdo"]
+position = Vector2( -3.35132, -2.88208 )
+shape = SubResource( 19 )
+
+[node name="ataque" type="Area2D" parent="Inimigo17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo17/ataque"]
+position = Vector2( -1.8761, 7.47452 )
+shape = SubResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Passagem" type="Area2D" parent="."]
+position = Vector2( 13486.1, 343.57 )
+z_index = -1
+script = ExtResource( 59 )
+
+[node name="Sprite" type="Sprite" parent="Passagem"]
+position = Vector2( -10.2485, 13.6759 )
+scale = Vector2( 0.508792, 0.387746 )
+texture = ExtResource( 56 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem"]
+position = Vector2( -7.41699, 19.9338 )
+shape = SubResource( 22 )
+[connection signal="body_entered" from="checkpoint2" to="Female" method="_on_checkpoint2_body_entered"]
+[connection signal="animation_finished" from="Inimigo2/AnimatedSprite" to="Inimigo2" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo2/Area2D" to="Inimigo2" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo2/pé esquerdo" to="Inimigo2" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo2/pé direito" to="Inimigo2" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo2/direito" to="Inimigo2" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo2/esquerdo" to="Inimigo2" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo2/ataque" to="Inimigo2" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo4/AnimatedSprite" to="Inimigo4" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo4/Area2D" to="Inimigo4" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo4/pé esquerdo" to="Inimigo4" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo4/pé direito" to="Inimigo4" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo4/direito" to="Inimigo4" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo4/esquerdo" to="Inimigo4" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo4/ataque" to="Inimigo4" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo5/AnimatedSprite" to="Inimigo5" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo5/Area2D" to="Inimigo5" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo5/pé esquerdo" to="Inimigo5" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo5/pé direito" to="Inimigo5" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo5/direito" to="Inimigo5" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo5/esquerdo" to="Inimigo5" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo5/ataque" to="Inimigo5" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo10/AnimatedSprite" to="Inimigo10" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo10/Area2D" to="Inimigo10" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo10/pé esquerdo" to="Inimigo10" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo10/pé direito" to="Inimigo10" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo10/direito" to="Inimigo10" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo10/esquerdo" to="Inimigo10" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo10/ataque" to="Inimigo10" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo6/AnimatedSprite" to="Inimigo6" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo6/Area2D" to="Inimigo6" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo6/pé esquerdo" to="Inimigo6" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo6/pé direito" to="Inimigo6" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo6/direito" to="Inimigo6" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo6/esquerdo" to="Inimigo6" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo6/ataque" to="Inimigo6" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo7/AnimatedSprite" to="Inimigo7" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo7/Area2D" to="Inimigo7" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo7/pé esquerdo" to="Inimigo7" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo7/pé direito" to="Inimigo7" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo7/direito" to="Inimigo7" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo7/esquerdo" to="Inimigo7" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo7/ataque" to="Inimigo7" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo8/AnimatedSprite" to="Inimigo8" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo8/Area2D" to="Inimigo8" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo8/pé esquerdo" to="Inimigo8" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo8/pé direito" to="Inimigo8" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo8/direito" to="Inimigo8" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo8/esquerdo" to="Inimigo8" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo8/ataque" to="Inimigo8" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo9/AnimatedSprite" to="Inimigo9" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo9/Area2D" to="Inimigo9" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo9/pé esquerdo" to="Inimigo9" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo9/pé direito" to="Inimigo9" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo9/direito" to="Inimigo9" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo9/esquerdo" to="Inimigo9" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo9/ataque" to="Inimigo9" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo3/AnimatedSprite" to="Inimigo3" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo3/Area2D" to="Inimigo3" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo3/pé esquerdo" to="Inimigo3" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo3/pé direito" to="Inimigo3" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo3/direito" to="Inimigo3" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo3/esquerdo" to="Inimigo3" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo3/ataque" to="Inimigo3" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo11/AnimatedSprite" to="Inimigo11" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo11/Area2D" to="Inimigo11" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo11/pé esquerdo" to="Inimigo11" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo11/pé direito" to="Inimigo11" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo11/direito" to="Inimigo11" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo11/esquerdo" to="Inimigo11" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo11/ataque" to="Inimigo11" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo12/AnimatedSprite" to="Inimigo12" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo12/Area2D" to="Inimigo12" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo12/pé esquerdo" to="Inimigo12" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo12/pé direito" to="Inimigo12" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo12/direito" to="Inimigo12" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo12/esquerdo" to="Inimigo12" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo12/ataque" to="Inimigo12" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo13/AnimatedSprite" to="Inimigo13" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo13/Area2D" to="Inimigo13" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo13/pé esquerdo" to="Inimigo13" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo13/pé direito" to="Inimigo13" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo13/direito" to="Inimigo13" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo13/esquerdo" to="Inimigo13" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo13/ataque" to="Inimigo13" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo14/AnimatedSprite" to="Inimigo14" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo14/Area2D" to="Inimigo14" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo14/pé esquerdo" to="Inimigo14" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo14/pé direito" to="Inimigo14" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo14/direito" to="Inimigo14" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo14/esquerdo" to="Inimigo14" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo14/ataque" to="Inimigo14" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo15/AnimatedSprite" to="Inimigo15" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo15/Area2D" to="Inimigo15" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo15/pé esquerdo" to="Inimigo15" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo15/pé direito" to="Inimigo15" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo15/direito" to="Inimigo15" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo15/esquerdo" to="Inimigo15" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo15/ataque" to="Inimigo15" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo16/AnimatedSprite" to="Inimigo16" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo16/Area2D" to="Inimigo16" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo16/pé esquerdo" to="Inimigo16" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo16/pé direito" to="Inimigo16" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo16/direito" to="Inimigo16" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo16/esquerdo" to="Inimigo16" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo16/ataque" to="Inimigo16" method="_on_ataque_body_entered"]
+[connection signal="animation_finished" from="Inimigo17/AnimatedSprite" to="Inimigo17" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Inimigo17/Area2D" to="Inimigo17" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Inimigo17/pé esquerdo" to="Inimigo17" method="_on_p_esquerdo_body_exited"]
+[connection signal="body_exited" from="Inimigo17/pé direito" to="Inimigo17" method="_on_p_direito_body_exited"]
+[connection signal="body_entered" from="Inimigo17/direito" to="Inimigo17" method="_on_direito_body_entered"]
+[connection signal="body_entered" from="Inimigo17/esquerdo" to="Inimigo17" method="_on_esquerdo_body_entered"]
+[connection signal="body_entered" from="Inimigo17/ataque" to="Inimigo17" method="_on_ataque_body_entered"]
+[connection signal="body_entered" from="Passagem" to="Passagem" method="_on_Passagem_body_entered"]
